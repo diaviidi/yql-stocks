@@ -42,10 +42,10 @@
 											it.item += <var_{currency}>{cells[td].span.text()}</var_{currency}>
 											break;
 										case "5":
-											it.item += <volume>{cells[td].span.text()}</volume>
+											it.item += <volume>{cells[td].text()}</volume>
 											break;
 										case "6":
-											it.item += <marketcap>{cells[td].span.text()}</marketcap>
+											it.item += <marketcap>{cells[td].text()}</marketcap>
 											break;
 										case "7":
 											it.item += <eps>{cells[td].span.text()}</eps>
