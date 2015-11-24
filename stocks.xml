@@ -19,7 +19,7 @@
 				var stocks = {
 					exec : function(inputurl){
 						var _url = inputurl || "http://www.eleconomista.es/indice/IBEX-35/resumen";
-						var query = y.query("select * from html where url=@url and xpath=\"//table/tbody/tr\"",{url:_url}); 
+						var query = y.query("select * from html where url=@url and xpath=\"//tbody/tr/td/table/tbody/tr\"",{url:_url}); 
 						var _return = <items />, it, cells,cont=0,aux,currency;
 						for(k in query.results.tr){
 							it = query.results.tr[k];
